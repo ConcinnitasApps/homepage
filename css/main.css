@@ -1,0 +1,22 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #031b2b;
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.logo {
+  display: block;
+  height: 25%;
+  width: 25%;
+  margin: auto;
+}
+.container {
+  color: #2ea0ef;
+  font-size: 36px;
+  font-size: 5vw;
+  text-align: center;
+}
