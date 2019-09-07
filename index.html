@@ -21,22 +21,32 @@
 <body>
   <header class="headerClear" id="header">
     <nav>
-      <ul class="navigation">
-        <li><a class="nav-button">Products</a></li>
-        <li><a class="nav-button">Update</a></li>
-        <li class="whiteLogo">
-          <a href="index.html">
-            <img class="logo" src="img/whiteLogo.png" alt="logo">
-          </a>
-        </li>
-        <li class="blueLogo">
-          <a href="index.html">
-            <img class="logo" src="img/blueLogo.png" alt="logo">
-          </a>
-        </li>
-        <li><a class="nav-button">Privacy Policy</a></li>
-        <li><a class="nav-button">About</a></li>
-      </ul>
+      <div class="transparentNav">
+        <ul class="navigation">
+          <li><a class="nav-button clear" href="#products">Products</a></li>
+          <li><a class="nav-button clear">Update</a></li>
+          <li class="whiteLogo">
+            <a href="#">
+              <img class="logo" src="img/whiteLogo.png" alt="logo">
+            </a>
+          </li>
+          <li><a class="nav-button clear">Privacy Policy</a></li>
+          <li><a class="nav-button clear">About</a></li>
+        </ul>
+      </div>
+      <div class="whiteNav">
+        <ul class="navigation">
+          <li><a class="nav-button blue">Products</a></li>
+          <li><a class="nav-button blue">Update</a></li>
+          <li class="whiteLogo">
+            <a href="index.html">
+              <img class="logo" src="img/blueLogo.png" alt="logo">
+            </a>
+          </li>
+          <li><a class="nav-button blue">Privacy Policy</a></li>
+          <li><a class="nav-button blue">About</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <div class="productContainer">
@@ -45,10 +55,12 @@
       <a class="next">&#10095;</a>
     </div>
   </div>
-  <h1>Products</h1>
+  <h1 name"products">Products</h1>
   <div class="product">
     <img src="img/TabsAsideIcon.png" alt="Tabs Aside Icon">
-    Tabs Aside - Coming Soon!
+    <h2>Tabs Aside</h2>
+    <p class="productIntro">Tabs Aside remembers your open tabs for later so you don't have to.</p>
+    <a class="productLink" href="https://chrome.google.com/webstore/detail/nboikgnmjgjcnnhencinblbaikdccdlb">View in Chrome Web Store</a>
   </div>
   <script src="main.js"></script>
 </body>
