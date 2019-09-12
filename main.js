@@ -1,5 +1,5 @@
-var header = document.getElementById('header');
-var navButtons = document.getElementsByClassName('nav-button');
+var clearNav = document.getElementsByClassName('transparentNav')[0];
+var whiteNav = document.getElementsByClassName('whiteNav')[0];
 var scrollChange = 0;
 var slideIndex = 1;
 
@@ -13,27 +13,18 @@ window.onscroll = function() {
   if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
     if (scrollChange == 0) {
       scrollChange = 1;
-      header.style.backgroundColor = "#fff";
-      header.childNodes[1].childNodes[1].childNodes[5].style.display = "none";
-      header.childNodes[1].childNodes[1].childNodes[7].style.display = "inline-block";
-      for (var i = 0, length = navButtons.length; i < length; i++) {
-        navButtons[i].style.color = "#546e82";
-      }
+      clearNav.style.display = "none";
+      whiteNav.style.display = "block";
     }
   } else {
     if (scrollChange == 1) {
       scrollChange = 0;
-      header.style.backgroundColor = "transparent"
-      header.childNodes[1].childNodes[1].childNodes[5].style.display = "inline-block";
-      header.childNodes[1].childNodes[1].childNodes[7].style.display = "none";
-      for (var i = 0, length = navButtons.length; i < length; i++) {
-        navButtons[i].style.color = "#fff";
-      }
+      clearNav.style.display = "block";
+      whiteNav.style.display = "none";
     }
   }
 };
-
-header.childNodes[1].childNodes[1].childNodes[7].style.display = "none";
+whiteNav.style.display = "none";
 
 showSlides(slideIndex);
 function showSlides(n) {
