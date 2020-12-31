@@ -1,6 +1,6 @@
 {
-    "name": "Concinnitas Apps",
-    "short_name": "Concinnitas Apps",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#2ea0ef",
-    "background_color": "#2ea0ef",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }

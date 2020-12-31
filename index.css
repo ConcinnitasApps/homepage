@@ -1,0 +1,86 @@
+body {
+    background: #000;
+    animation: 10s infinite alternate ease-out breathing-color;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px hsla(206, 6%, 10%, 0.2);
+}
+
+#coming-soon {
+    font-weight: 700;
+    font-size: 10vw;
+    line-height: 10vw;
+    color: #fff;
+
+    width: 100vw;
+    text-align: center;
+
+    text-shadow: 0 1px 10px hsla(206, 6%, 10%, 0.2);
+}
+
+.animate-container {
+    height: 15vw;
+    overflow: hidden;
+}
+.animate-container > * {
+    display: inline-block;
+}
+.centered {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate-up {
+    animation: 1s cubic-bezier(.67,.03,.39,.79) forwards animate-up;
+}
+
+.text-breathe {
+    animation: 3s infinite alternate ease-in-out text-breathe;
+}
+
+@keyframes text-breathe {
+    0% {
+        transform: translateY(0) scale(1, 1);
+    }
+    100% {
+        transform: translateY(-10%) scale(1.05, 1.05);
+    }
+}
+
+@keyframes animate-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes breathing-color {
+    0% {
+        background-color: #158ee5;
+    }
+    50% {
+        background-color: #f400fc;
+    }
+    100% {
+        background-color: #13d99a;
+    }
+}
+
